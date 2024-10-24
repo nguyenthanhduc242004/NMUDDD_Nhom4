@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@drawable/module_wrapper">
+
+    <ImageView
+        android:id="@+id/imageViewFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_folder_open_24"
+
+    />
+
+    <TextView
+        android:id="@+id/textViewFolderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewFolder"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/textColor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewNumberOfModules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageViewFolder"
+        android:layout_alignBottom="@id/imageViewFolder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:text="TextView"
+        android:textColor="@color/textColor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewUserCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFolderName"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:layout_above="@+id/homeFooter">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Quizlet"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonAddModule"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/backgroundColor"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/homeNavigationButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/buttonModule"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView2"
+                android:layout_weight="1"
+                android:background="@color/backgroundColor"
+                android:text="Học phần"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/backgroundColor"
+                android:text="Thư mục"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarHome"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeNavigationButtons"
+            android:layout_marginTop="-4dp"
+            android:background="@color/backgroundColor"
+            android:progress="50"
+            android:progressTint="#abb0ff"
+            android:scaleY="0.6" />
+
+        <TextView
+            android:id="@+id/textViewModuleFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBarHome"
+            android:layout_marginTop="4dp"
+            android:paddingStart="16dp"
+            android:text="Bộ lọc"
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editTextModuleFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewModuleFilter"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="@color/textColor"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:text="Bộ lọc"
+            android:textColor="@color/textColor" />
+
+        <ListView
+            android:id="@+id/listViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/editTextModuleFilter"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12.0sp" />
+
+
+    </RelativeLayout>
+    <include layout="@layout/home_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeFooter"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

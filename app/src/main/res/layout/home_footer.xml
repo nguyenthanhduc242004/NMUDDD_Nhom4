@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="4dp"
+    android:background="@color/backgroundColor">
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/backgroundColor"
+        android:drawableTop="@drawable/baseline_home_24"
+        android:text="Trang chủ"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/buttonFooterAdd"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:src="@drawable/baseline_add_circle_outline" />
+
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/backgroundColor"
+        android:drawableTop="@drawable/baseline_settings_24"
+        android:drawableTint="@color/textBlurredColor"
+        android:text="Trang chủ"
+        android:textAllCaps="false"
+        android:textColor="@color/textBlurredColor"
+        android:textSize="10sp"
+        android:tint="@color/textBlurredColor" />
+</LinearLayout>

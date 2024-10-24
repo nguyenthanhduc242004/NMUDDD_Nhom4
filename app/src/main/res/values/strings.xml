@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QuizletProject</string>
+    <string name="mainHorizontalPadding">20dp</string>
+</resources>
